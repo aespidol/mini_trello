@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="trello">
+<head>
+	<title>Mini Trello</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!-- JavaScript Components -->
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+	<script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="bower_components/angular-materialize/src/angular-materialize.js"></script>
+
+	<!-- Angular Files -->
+	<script type="text/javascript" src="./assets/javascript/main.js"></script>
+	<script type="text/javascript" src="./assets/javascript/controller/logins.js"></script>
+	<script type="text/javascript" src="./assets/javascript/controller/trellos.js"></script>
+	<!-- Stylesheets and Icons -->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bower_components/Materialize/bin/materialize.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/Materialize/bin/materialize.js">
+	<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+
+	<!-- JQuery and Socket  -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var socket = io.connect();
+			socket.on('connect', function (data) {
+				console.log('BROWSER::WE ARE USING SOCKETS!');
+			})
+		})
+	</script>
+
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="" class="brand-logo">Trello</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="">Sass</a></li>
+				<li><a href="">Components</a></li>
+				<li><a href="">JavaScript</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div ng-view=""></div>
+</body>
+</html>

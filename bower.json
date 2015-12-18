@@ -1,0 +1,24 @@
+{
+  "name": "Mini_Trello",
+  "description": "Dojo_Trello_Socket",
+  "main": "index.js",
+  "authors": [
+    "aespidol <aespidol@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "Materialize": "materialize#~0.97.3",
+    "angular-route": "~1.4.8",
+    "angular-materialize": "*"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "mini_trello",
+  "version": "1.0.0",
+  "description": "Dojo_Trello_Socket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.14.1",
+    "e": "0.0.4",
+    "express": "^4.13.3"
+  },
+  "dependencies": {
+    "socket.io": "^1.3.7"
+  }
+}
